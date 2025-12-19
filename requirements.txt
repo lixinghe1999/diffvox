@@ -5,9 +5,9 @@ notebook
 numpy
 PyYAML
 scipy
-torch
-torchaudio
-torchvision
+# torch
+# torchaudio
+# torchvision
 torchlpc
 torchcomp
 torch_fftconv

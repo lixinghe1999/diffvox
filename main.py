@@ -19,6 +19,7 @@ nb_logger.setLevel(logging.ERROR)  # only show error
 
 from data.internal import internal_vocal
 from data.medley_db import medley_vocal
+from data.tme import tme_vocal
 from modules.utils import remove_fx_parametrisation, chain_functions
 from modules.fx import SurrogateDelay, FSSurrogateDelay
 
@@ -139,6 +140,8 @@ def train(cfg: DictConfig):
                 iterator = internal_vocal
             case "medley_vocal":
                 iterator = medley_vocal
+            case "tme_vocal":
+                iterator = tme_vocal
             case _:
                 raise ValueError(cfg.dataset)
     else:
